@@ -20,13 +20,16 @@ To build and run this project, you'll need:
 ### Installation
 
 1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/shiftyshadows/SDL_Project.git
-   cd sdl-raycasting-engine
+
+-   ```bash
+-   git clone https://github.com/shiftyshadows/SDL_Project.git
+-   cd sdl-raycasting-engine
 
 2. **Compile the project:**:
-   gcc -Wall -Werror -Wextra -pedantic -std=gnu89  *.c -o raycasting_game -l SDL2 -l m
+
+-   gcc -Wall -Werror -Wextra -pedantic -std=gnu89  *.c -o raycasting_game -l SDL2 -l m
 
 3. **Run the game:**:
-   ./raycasting_game
+
+-   ./raycasting_game
 
