@@ -6,7 +6,8 @@
 # feature for the data you need to update frequently.
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# 'bundle exec jekyll serve'. If you change this file, please restart the server
+# process.
 #
 # If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
@@ -20,26 +21,26 @@
 
 
 # Site settings
+---
 title: SDL Raycasting Game Engine
-email: purple.quasar@proton.me
 description: A simple 2D raycasting-based game engine built using SDL2 in C
-baseurl: "/SDL_Project" # The subpath of your site, e.g. /raycasting-game
-url: "https://shiftyshadows.github.io/SDL_Project" # Your GitHub Pages URL
+baseurl: "/SDL_Project"  # The subpath of your site, e.g. /raycasting-game
+url: "https://shiftyshadows.github.io/SDL_Project"  # Your GitHub Pages URL
 
 
 twitter_username: shifty_shadows
-github_username:  shiftyshadows
+github_username: shiftyshadows
 
 # Author details
 author: shiftyshadows
 email: purple.quasar@proton.me
 
 # Repository settings
-repository: shifty_shadows/SDL_Project # Update with your GitHub repo
+repository: shifty_shadows/SDL_Project  # Update with your GitHub repo
 use_full_site_title: true
 
 # Build settings
-#theme: minima
+# theme: minima
 theme: jekyll-theme-architect
 remote_theme: pages-themes/architect@v0.2.0
 plugins:
