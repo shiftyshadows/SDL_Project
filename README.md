@@ -37,8 +37,10 @@ To build and run this project, you'll need:
 
 - **W**: Move forward
 - **S**: Move backward
-- **A**: Rotate left
-- **D**: Rotate right
+- **A**: Strafe left
+- **D**: Strafe right
+- **Left Key**: Rotate Left
+- **Right Key**: Rotate Right
 - **ESC**: Quit the game
 
 ## Code Overview
