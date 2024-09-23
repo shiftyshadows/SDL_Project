@@ -15,7 +15,7 @@ This project is a simple 2D raycasting-based game engine implemented using SDL2 
 ### Prerequisites
 
 To build and run this project, you'll need:
-- **SDL2**: Simple DirectMedia Layer (SDL2) installed on your machine. You can install it with your system's package manager or from [here](https://www.libsdl.org/download-2.0.php).
+- **SDL2**: Simple DirectMedia Layer (SDL2) installed on your machine. You can install it with your system's package manager or from [here](https://github.com/libsdl-org/SDL/releases/tag/release-2.30.7).
 
 ### Installation
 
