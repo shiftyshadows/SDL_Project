@@ -21,9 +21,9 @@ To build and run this project, you'll need:
 
 1. **Clone the repository**:
 
--   ```bash
+-   bash
 -   git clone https://github.com/shiftyshadows/SDL_Project.git
--   cd sdl-raycasting-engine
+-   cd SDL_Project
 
 2. **Compile the project:**:
 
@@ -33,3 +33,35 @@ To build and run this project, you'll need:
 
 -   ./raycasting_game
 
+## Controls
+
+- **W**: Move forward
+- **S**: Move backward
+- **A**: Rotate left
+- **D**: Rotate right
+- **ESC**: Quit the game
+
+## Code Overview
+### Main Components
+
+- **GameState struct**: This structure holds all player state and world data. It includes the player's position, direction, and the game world map.
+
+### Key Functions
+
+- **cast_rays**: Casts rays from the player's position to determine the distance to walls and renders the 3D scene.
+- **handle_events**: Handles player movement (forward, backward) and rotation (left, right) using keyboard inputs.
+- **draw_sky, draw_wall, draw_ground**: Functions that handle the rendering of sky, walls, and ground based on the player's perspective.
+- **set_camera_angle**: Sets the player's initial viewing direction based on a given angle in degrees.
+
+### Movement and Rotation Logic
+
+- **Movement**: The player can move forward or backward in the direction they are currently facing. Collisions with walls are prevented using the worldMap data.
+- **Rotation**: The player can rotate left or right, which adjusts their direction (dirX and dirY) as well as the camera plane (planeX and planeY) for proper field of view.
+
+### Customizing the Camera Angle
+
+- You can set the player's initial viewing direction by calling set_camera_angle with the desired angle (in degrees). For example, to set the player facing 90 degrees (upward):
+  set_camera_angle(&state, 90.0);
+
+### License
+- This project is licensed under the MIT [License](https://opensource.org/license/mit) - see the LICENSE file for details.
