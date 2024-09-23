@@ -28,8 +28,7 @@ use_full_site_title: true
 
 title: shiftyshadows
 email: purple.quasar@proton.me
-description: >- # this means to ignore newlines until "baseurl:"
- A simple 2D raycasting-based game engine built using SDL2 in C
+description: A simple 2D raycasting-based game engine built using SDL2 in C
 baseurl: "/SDL_Project" # the subpath of your site, e.g. /blog
 url: "https://shiftyshadows.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: shifty_shadows
