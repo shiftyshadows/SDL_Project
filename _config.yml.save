@@ -18,7 +18,7 @@ use_full_site_title: true
 # Social links (optional)
 social_links:
   - name: GitHub
-    url: https://github.com/shiftyshadows/raycasting-game
+    url: https://github.com/shiftyshadows/SDL_Project
   - name: Twitter
     url: https://x.com/shifty_shadows
 
