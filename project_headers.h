@@ -7,6 +7,9 @@
 
 #define SCREEN_WIDTH 800
 #define SCREEN_HEIGHT 600
+#define MOVE_SPEED 0.05
+#define ROTATE_SPEED 0.05
+#define MOUSE_SENSITIVITY 0.002
 
 /**
  * struct GameState - Stores the player's state and the game world map.
@@ -36,7 +39,7 @@ typedef struct GameState
 
 void init_game_state(GameState *state);
 int init_SDL(SDL_Window **window, SDL_Renderer **renderer);
-void handle_events(int *running);
+void handle_events(int *running, GameState *state);
 void clean_up(SDL_Window *window, SDL_Renderer *renderer);
 void set_camera_angle(GameState *state, double angle);
 void draw_sky(SDL_Renderer *renderer, int x, int drawStart);
@@ -52,5 +55,15 @@ void perform_DDA(GameState *state, int *mapX, int *mapY, double *sideDistX,
 double calculate_wall_distance(int side, int mapX, int mapY, GameState *state,
 	int stepX, int stepY, double rayDirX, double rayDirY);
 void cast_rays(SDL_Renderer *renderer, GameState *state);
+void handle_keyboard_input(SDL_Event *event, int *running, GameState *state);
+void handle_mouse_input(GameState *state);
+void rotate_camera(GameState *state, double rotationSpeed);
+void strafe_left_right(GameState *state, double direction);
+void move_forward_backward(GameState *state, double direction);
+
+
+
+
+
 
 #endif /* SDL_UTILS_H */

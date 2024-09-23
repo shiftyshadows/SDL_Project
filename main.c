@@ -75,7 +75,7 @@ int main(void)
 	init_game_state(&state);
 	while (running)
 	{/* Handle events like movement and rotation */
-		handle_events(&running);
+		handle_events(&running, &state);
 		cast_rays(renderer, &state);
 		SDL_RenderPresent(renderer);
 		SDL_Delay(16);

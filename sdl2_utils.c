@@ -36,20 +36,28 @@ int init_SDL(SDL_Window **window, SDL_Renderer **renderer)
 }
 
 /**
- * handle_events - Handles the SDL event loop.
+ * handle_events - Polls SDL events and delegates input handling to helpers.
  *
- * @running: Pointer to an int that indicates if the loop should continue.
+ * @running: Pointer to the running status to indicate when to exit (int*).
+ * @state: Pointer to the GameState struct containing player and world data.
  *
- * Return: void
+ * Return: void.
  */
-void handle_events(int *running)
+void handle_events(int *running, GameState *state)
 {
 	SDL_Event event;
 
 	while (SDL_PollEvent(&event))
 	{
 		if (event.type == SDL_QUIT)
-			*running = 0;
+		{
+			*running = 0; }
+		else if (event.type == SDL_KEYDOWN)
+		{
+			handle_keyboard_input(&event, running, state); }
+		else if (event.type == SDL_MOUSEMOTION)
+		{
+			handle_mouse_input(state); }
 	}
 }
 
