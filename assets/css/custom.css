@@ -1,7 +1,7 @@
 /* Custom Cover Image */
 .cover-image {
-  height: 180vh;
-  background-size: cover;
+  height: 80vh;
+  background-size: 150%;
   background-position: center;
   color: white;
   display: flex;
