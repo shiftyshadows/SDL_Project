@@ -30,8 +30,8 @@ social_links:
   twitter: "https://twitter.com/shifty_shadows"
 
 # Use Architect theme
-theme: jekyll-theme-architect
-remote_theme: pages-themes/architect@v0.2.0
+#theme: jekyll-theme-architect
+#remote_theme: pages-themes/architect@v0.2.0
 
 # Plugins
 plugins:
