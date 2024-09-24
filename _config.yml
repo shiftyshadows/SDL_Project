@@ -1,0 +1,43 @@
+# Site settings
+---
+title: SDL Raycasting Game Engine
+description: A simple 2D raycasting-based game engine built using SDL2 in C
+baseurl: "/SDL_Project"  # The subpath of your site, e.g. /raycasting-game
+url: "https://shiftyshadows.github.io/SDL_Project"  # Your GitHub Pages URL
+
+
+# Author details
+author: shiftyshadows
+email: purple.quasar@proton.me
+
+# Repository settings
+repository: shifty_shadows/SDL_Project  # Update with your GitHub repo
+use_full_site_title: true
+
+# Navigation links
+nav_links:
+  - title: "Features"
+    url: "#features"
+  - title: "About"
+    url: "#about"
+  - title: "Demo"
+    url: "https://link-to-your-demo.com"
+
+# Social links
+social_links:
+  linkedin: "https://linkedin.com/in/paulapiyo/"
+  github: "https://github.com/shiftyshadows"
+  twitter: "https://twitter.com/shifty_shadows"
+
+# Use Architect theme
+theme: jekyll-theme-architect
+remote_theme: pages-themes/architect@v0.2.0
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+# Additional configuration
+markdown: kramdown

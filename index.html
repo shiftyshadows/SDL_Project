@@ -1,0 +1,60 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Large Cover Image and Intro Section -->
+<header class="cover-image" style="background-image: url('/assets/images/cover.jpg');">
+  <div class="container text-center">
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+    <a href="https://link-to-your-demo.com" class="btn btn-primary">View Demo</a>
+  </div>
+</header>
+
+<!-- Features Section -->
+<section id="features" class="container">
+  <h2>Key Features</h2>
+  <div class="feature-grid">
+    <div class="feature">
+      <img src="/assets/images/feature1.jpg" alt="Feature 1">
+      <h3>Feature 1: Dynamic Raycasting</h3>
+      <p>Our project uses real-time raycasting to dynamically render walls and objects.</p>
+    </div>
+    <div class="feature">
+      <img src="/assets/images/feature2.jpg" alt="Feature 2">
+      <h3>Feature 2: Smooth Player Movement</h3>
+      <p>Players can move and rotate smoothly with full collision detection.</p>
+    </div>
+    <div class="feature">
+      <img src="/assets/images/feature3.jpg" alt="Feature 3">
+      <h3>Feature 3: Custom Map Parsing</h3>
+      <p>Load custom maps from external files, allowing for unique user-created environments.</p>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container">
+  <h2>About the Project</h2>
+  <p>This project was inspired by the classic raycasting engines used in early 3D games. I wanted to create something that combined my passion for game development with modern technology. This project is part of my portfolio for <a href="https://holbertonschool.com">Holberton School</a>, where I have been learning full-stack development.</p>
+
+  <!-- Team Social Links -->
+  <ul>
+    <li><a href="{{ site.social_links.linkedin }}">LinkedIn</a></li>
+    <li><a href="{{ site.social_links.github }}">GitHub</a></li>
+    <li><a href="{{ site.social_links.twitter }}">Twitter</a></li>
+  </ul>
+
+  <!-- GitHub Repository Link -->
+  <p><a href="https://github.com/your-username/my-awesome-project">Project GitHub Repository</a></p>
+</section>
+
+<!-- Video Section -->
+<section id="video" class="container">
+  <h2>Project Walkthrough</h2>
+  <video controls>
+    <source src="/assets/videos/project-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
