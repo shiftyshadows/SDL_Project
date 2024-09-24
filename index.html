@@ -4,7 +4,7 @@ title: Home
 ---
 
 <!-- Large Cover Image and Intro Section -->
-<header class="cover-image" style="background-image: url('/assets/images/cover.jpg');">
+<header class="cover-image" style="background-image: url('{{ '/assets/images/cover.jpg' | relative_url }}');">
 </header>
 
 <!-- Features Section -->
@@ -22,7 +22,7 @@ title: Home
       <p>Players can move and rotate smoothly with full collision detection.</p>
     </div>
     <div class="feature">
-      <img src="{{ '/assets/images/feature1.jpg' | relative_url }}" alt="Feature 3">
+      <img src="{{ '/assets/images/feature3.jpg' | relative_url }}" alt="Feature 3">
       <h3>Feature 3: Custom Map Parsing</h3>
       <p>Load custom maps from external files, allowing for unique user-created environments.</p>
     </div>
@@ -42,7 +42,7 @@ title: Home
   </ul>
 
   <!-- GitHub Repository Link -->
-  <p><a href="https://github.com/your-username/my-awesome-project">Project GitHub Repository</a></p>
+  <p><a href="https://github.com/shiftyshadows/SDL_Project">Project GitHub Repository</a></p>
 </section>
 
 <!-- Video Section -->
